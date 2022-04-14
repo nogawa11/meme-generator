@@ -37,7 +37,7 @@ body {
   margin-right: 32px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@ form {
 
 .form--input {
   display: flex;
-  gap: 32px;
+  gap: 16px;
   margin-top: 48px;
 }
 
@@ -54,7 +54,7 @@ form {
   line-height: 42px;
   border: 1px solid #D5D4D8;
   border-radius: 6px;
-  width: 300px;
+  width: 260px;
   text-indent: 16px;
   font-family: inherit;
 }
@@ -68,7 +68,12 @@ form {
   height: 56px;
   font-size: 16px;
   font-family: inherit;
-  width: 648px;
+  width: 548px;
   margin-top: 28px;
   cursor: pointer;
+}
+
+.meme--image {
+  width: 548px;
+  margin: 32px 0;
 }
