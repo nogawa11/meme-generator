@@ -8,6 +8,8 @@ export default function Meme() {
     randomImage: "https://i.imgflip.com/1bij.jpg"
   })
 
+  const [memeTop, setMemeTop] = React.useState("")
+
   const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
   function getMemeImage() {
@@ -18,8 +20,11 @@ export default function Meme() {
   }
 
   function handleChange(event) {
-    setMeme(prevState => ({...prevState, [event.target.name]: event.target.value}))
-    console.log(meme)
+    const {name, value} = event.target
+    setMeme(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
   }
 
   return (
@@ -40,7 +45,13 @@ export default function Meme() {
           />
         </div>
         <button onClick={getMemeImage} className="form--btn" type="submit">Get a new meme image 🖼</button>
-        <img className="meme--image" src={meme.randomImage} alt="meme" />
+        <div className="meme">
+          <img className="meme--image" src={meme.randomImage} alt="meme" />
+          <div className="meme--container">
+            <h2 className="meme--text top">{meme.topText ? meme.topText : "One does not simply"}</h2>
+            <h2 className="meme--text bottom">{meme.bottomText ? meme.bottomText : "walk into Mordor"}</h2>
+          </div>
+        </div>
       </div>
     </main>
   )
