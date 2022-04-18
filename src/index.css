@@ -81,11 +81,10 @@ body {
 
 .meme {
   position: relative;
-  display: flex;
 }
 
 .meme--text {
-  font-size: 48px;
+  font-size: 30px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -97,10 +96,9 @@ body {
 }
 
 .top {
-  top: 24px;
-
+  top: 32px;
 }
 
 .bottom {
-  bottom: 24px;
+  bottom: 32px;
 }
