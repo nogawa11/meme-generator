@@ -102,3 +102,55 @@ body {
 .bottom {
   bottom: 32px;
 }
+
+@media only screen and (max-width: 450px) {
+  .navbar--logo-text {
+    color: white;
+    font-size: 12px;
+  }
+
+  .navbar--title {
+    color: white;
+    font-size: 10px;
+    margin-right: 32px;
+  }
+
+  .form--input {
+    display: block;
+    margin-top: 48px;
+  }
+
+  .form--input > input {
+    width: 100%;
+  }
+
+  .form--input > input:first-child {
+    margin-bottom: 8px;
+  }
+
+  .form--btn {
+    width: 100%;
+  }
+  .meme--image {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px) {
+  .form--input {
+    gap: 12px;
+  }
+
+  .form--input > input {
+    width: 205px;
+  }
+
+  .form--btn {
+    width: 430px;
+  }
+  .meme--image {
+    width: 430px;
+    border-radius: 4px;
+  }
+}
